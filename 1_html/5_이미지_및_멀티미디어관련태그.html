@@ -15,8 +15,8 @@
 
     <h3>src속성과 alt속성</h3>
 
-    <img src="..\resources\resources\image\passion.jpg" alt="" width="300px" height="300px">
-    <img src="..\resources\resources\image\sungmo.png" alt="" width="300px" height="400px">
+    <!-- <img src="..\resources\image\passion.jpg" alt="" width="300px" height="300px"> -->
+    <img src="..\resources\image\passion2.jpg" alt="" width="300px" height="400px">
     <br><br><br><br>
 
     <h3>width와 height 속성</h3>
@@ -28,7 +28,7 @@
     <br><br><br><br>
 
     <h4>고정길이단위(px) : 화면사이즈(ViewPort)가 조정되더라도 이미지 크기의 변동이 없다</h4>
-    <img src="..\resources\resources\image\nuguri1.gif" width="200px" alt="">
+    <img src="..\resources\image\nuguri1.gif" width="200px" alt="">
     <img src="..\resources\resources\image\nuguri1.gif" width="200px" alt="">
     <img src="..\resources\resources\image\nuguri1.gif" width="200px" alt="">
     <img src="..\resources\resources\image\nuguri1.gif" width="200px" alt="">
@@ -64,6 +64,30 @@
         <area shape="rect" coords="0,0,250,504" href="https://google.com" alt="구글로 이동">
         <area shape="rect" coords="250,0,500,504" href="https://naver.com" alt="네이버로 이동">
     </map>
+
+    <h1>미디어 관련 태그</h1>
+    <h3>오디오 관련 태그</h3>
+
+    <!--
+        src : 오디오의 경로
+        controls : 미디어 제어 컨트롤러 표시 여부
+        autoplay : 자동재생
+        loop : 반복재생
+        muted : 음소거
+        preload : 재생 전 미리 다운로드 여부
+
+        - 브라우저에 따라 제공하지 않는 속성이 있을 수 있다.
+    -->
+    <audio src="../resources/audio/major.mp3" controls autoplay muted preload="auto">
+        <!-- 오디오 태그를 사용하지 못하는 경우 대신 보여줄 문장 -->
+        당신의 브라우저는 audio를 사용할 수 없습니다.
+    </audio>
+
+    <h3>비디오 관련 태그</h3>
+    <video src="../resources/video/video1.mp4" controls muted preload="auto" poster="../resources/image/bono.jpg" width="160px" height="100px">
+        현재 브라우저에서는 비디오를 지원하지 않습니다.
+    </video>
+
 </body>
 
 </html>

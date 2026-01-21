@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div,span {
+            border : 1px solid black;
+        }
+        #div1,#span1 {
+            background-color: red;
+        }
+        #div2, #span2{
+            background-color: yellow;
+        }
+        #div3,#span3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>영역 관련 태그</h1>
+    <!--
+        html 내부에는 영역과 관련하여 크게 2가지 요소 존재
+        1. 블럭 요소
+            - 한 줄 단위로 영역을 차지하는 요소
+            - 한줄 전체를 차지하기 때문에 줄바꿈이 자동 적용
+            ex) h, p, pre, div
+        
+        2. 인라인 요소
+            - content 내용에 해당되는 부분만 영역을 차지
+            - 줄바꿈이 적용되지 않음
+            ex) b, s, input, img, span
+    -->
+
+    <h2>div 태그와 span 태그 차이점</h2>
+
+    <h3>div 태그 : 블럭요소(한 줄 단위 영역차지)</h3>
+    <div id="div1">div 영역</div>
+    <div id="div2">div 영역</div>
+    <div id="div3">div 영역</div>
+
+    <h3>span 태그 : 인라인요소(content 영역만을 차지)</h3>
+    <span id="span1">span 영역</span><br>
+    <span id="span2">span 영역</span><br>
+    <span id="span3">span 영역</span><br>
+
+    <h3>div 태그 : 컨텐츠 영역의 값을 하나의 박스로 관리</h3>
+    <div>
+        기곡줄압니다 암한인 익앗에 고나의 자잉으나이다 덴개는, 으이는 밈갰 빠시텨아히뎌의 리바새감톰의 례삼껜갸개감강.
+        처아앳거틴 앵셍살 넨흐뀐존은 트졸 숸즛릴이기 토뇽글이나, 바읜제는 린혼즤너의. 
+        사덕지는 삐쿡 렚려즈의 닝다자를 쌔히르오 즌오사의 압므디라. 
+        헤서리흔 해자아서 라유소 늠럴비가 몸헐을, 야오뱌 간헐고 엉가즈처럼, 김돠웅인 질라엽귀에, 아타옵넬다. 
+        시브쿠너가 잭쵸아다 이누 탈워흐컬왼야 우굿구나 힙펀만 가솝텐운디후어 퐁구언은 맘애의 안짜 나마니쇼로. 
+        바찬은 더겸풍을 가잴았시지 걸화았시임보다, 어롬어처뻬싰은 능룍다, 뇨상얺을 라저저 가흐외훈 날멩제쳥쿘핀둡으는. 
+        겹우마뇨가 며니까지 차사나도마장힝더릐를, 만하부으고도록 란에를 노강은 하이를 라느슥긔본다 걍느딕기가.
+    </div>
+
+    <h3>span 태그 : 컨텐츠 영역의 값을 문장단위로 관리</h3>
+    <span>
+        기곡줄압니다 암한인 익앗에 고나의 자잉으나이다 덴개는, 으이는 밈갰 빠시텨아히뎌의 리바새감톰의 례삼껜갸개감강.
+        처아앳거틴 앵셍살 넨흐뀐존은 트졸 숸즛릴이기 토뇽글이나, 바읜제는 린혼즤너의. 
+        사덕지는 삐쿡 렚려즈의 닝다자를 쌔히르오 즌오사의 압므디라. 
+        헤서리흔 해자아서 라유소 늠럴비가 몸헐을, 야오뱌 간헐고 엉가즈처럼, 김돠웅인 질라엽귀에, 아타옵넬다. 
+        시브쿠너가 잭쵸아다 이누 탈워흐컬왼야 우굿구나 힙펀만 가솝텐운디후어 퐁구언은 맘애의 안짜 나마니쇼로. 
+        바찬은 더겸풍을 가잴았시지 걸화았시임보다, 어롬어처뻬싰은 능룍다, 뇨상얺을 라저저 가흐외훈 날멩제쳥쿘핀둡으는. 
+        겹우마뇨가 며니까지 차사나도마장힝더릐를, 만하부으고도록 란에를 노강은 하이를 라느슥긔본다 걍느딕기가.
+    </span>
+
+    <hr>
+
+    <h1>iFrame 태그</h1>
+    <p>
+        - 현재 html 문서에 다른 html 문서를 추가하는 태그
+    </p>
+    <iframe src="5_이미지_및_멀티미디어관련태그.html" frameborder="0" width="560", height="315"></iframe>
+    <iframe width="711" height="356" src="https://www.youtube.com/embed/_i9dh4Dt_p4" title="국내 출시 예정, 테슬라 모델Y L 최초 시승기! 거대한 6인승 단 540만원 차이...설마 쏘렌토까지?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

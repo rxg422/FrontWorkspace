@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        하이퍼링크 기능은 웹문서에서 또 다른 웹문서를 클릭을 통해 이동할 수 있도록 연결시키는 기능.
+        텍스트, 이미지 등 다양한 요소에 적용시킬 수 있다.
+    -->
+
+    <h1>하이퍼링크 태그</h1>
+    <h3>a 태그를 이용한 하이퍼링크</h3>
+    <a href="./1_HTML 개요.html">html 개요 페이지로 이동</a>
+
+    <!-- 상대 경로 방식 -->
+    <a href="2_글자관련태그.html"></a>
+    <a href="./2_글자관련태그.html"></a>
+    <!-- 절대 경로 방식 -->
+    <a href="/1_html/2_글자관련태그.html"></a>
+
+    <h3>외부 웹사이트와 링크 연결</h3>
+    <ul>
+        <!-- target="_blank" : 새창 열기 속성 -->
+        <li><a href="https://www.google.com" target="_blank">Move Google</a></li>
+        <li><a href="https://www.naver.com">Move Naver</a></li>
+    </ul>
+
+    <h3>이미지를 클릭해 웹페이지 링크 연결</h3>
+    <a href="https://naver.com"><img src="../resources/image/bono.jpg" alt=""></a>
+
+    <hr>
+
+    <h3>id="menu" : 한 페이지 내에서 이동하는 앵커태그</h3>
+    <ul>
+        <li><a href="#content1">본문 1</a></li>
+        <li><a href="#content2">본문 2</a></li>
+        <li><a href="#content3">본문 3</a></li>
+    </ul>
+
+    <h4 id="content1">본문 1</h4>
+    <div>
+        나라스페이스는 과학기술정보통신부가 추진하는 ‘글로벌 톱 전략연구단’ 사업 중 우주항공반도체 전략연구단의 수행기관으로 
+        선정됐다는 소식이 전해지면서 투자심리가 급격히 개선됐다. 해당 사업은 국산 우주용 반도체의 신뢰성과 우주 환경 적응성을 
+        실제 우주 공간에서 검증하는 것을 목표로 한다.
+    </div>
+
+    <h4 id="content2">본문 2</h4>
+    <div>
+        이날 우주항공 관련주로 분류되는 우리기술(032820)(29.97%)과 그린광학(0015G0)(29.84%)도 나란히 상한가로 장을 마감했다. 
+        이 밖에 이노스페이스(462350)(14.69%), 쎄트렉아이(099320)(9.95%), 스피어코퍼레이션(347700)(7.40%) 등 관련 종목들도 
+        큰 폭으로 상승했다.
+    </div>
+
+    <h4 id="content3">본문 3</h4>
+    <div>
+        최근 일론 머스크가 이끄는 우주기업 스페이스X가 하반기 기업공개(IPO)를 예고하면서 우주항공 테마에 대한 관심이 커진 가운데, 
+        각종 호재가 더해지며 상승세가 이어지고 있다.
+    </div>
+</body>
+</html>
