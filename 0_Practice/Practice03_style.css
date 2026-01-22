@@ -1,24 +1,29 @@
+/* 1번 문제 */
 #container1.highlight {
     background-color: yellow;
 }
 
+/* 2번 문제 */
 div#container2>p {
     color: red;
 }
 
-div#container2:not(div#container2>p) {
+#container2 p:not(#container2>p) {
     color: pink;
 }
 
+/* 3번 문제 */
 #container3>input:not(input[type=submit]) {
     border: 1px solid blue;
 }
 
+/* 4번 문제 */
 #container4>h1, #container4>.title {
     color: green;
     font-size: 20px;
 }
 
+/* 5번 문제 */
 div[class^=user] {
     background-color: lightgray;
 }
@@ -35,6 +40,7 @@ div[class|=admin] {
     background-color: greenyellow;
 }
 
+/* 6번 문제 */
 #container6>input:focus {
     background-color: yellow;
 }
@@ -43,15 +49,18 @@ div[class|=admin] {
     background-color: green;
 }
 
+/* 7번 문제 */
 #container7>li:nth-of-type(2) {
     font-weight: bold;
 }
 
+/* 8번 문제 */
 .container8>p {
     color: blue;
 }
 
-#container9>p[title*="important"]:not(#container9>p[title*="not-important"]) {
+/* 9번 문제 */
+#container9>p[title*="important"]:not(p[title*="not-important"]) {
     background-color: red;
 }
 
