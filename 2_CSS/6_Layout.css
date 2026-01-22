@@ -1,0 +1,98 @@
+.area1 {
+    background-color: red;
+}
+.area2 {
+    background-color: orange;
+}
+.area3 {
+    background-color: yellow;
+}
+.area4 {
+    background-color: green;
+}
+.area5 {
+    background-color: blue;
+}
+
+.block {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    color: white;
+
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+
+}
+
+#container-1 {
+    display: block;
+    width: 323px;
+    height: 472px;
+    border: 3px solid black;
+}
+
+#container-1>:first-child {
+    height: 30%;
+    background-color: red;
+}
+
+#container-1>:last-child {
+    height: 70%;
+    background-color: blue;
+}
+
+#container-2 {
+    width: 300px;
+    height: 440px;
+    border: 3px solid black;
+}
+#container-2>:nth-of-type(1) {
+    height: 20%;
+    background-color: green;
+}
+#container-2>:nth-of-type(2) {
+    height: 30%;
+    background-color: red;
+}
+#container-2>:nth-of-type(3) {
+    height: 50%;
+    background-color: skyblue;
+}
+
+#container-3 {
+    width: 300px;
+    height: 150px;
+    border: 5px solid red;
+}
+#container-3>:nth-of-type(1) {
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    display: inline-block;
+}
+#container-3>:nth-of-type(2) {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    display: inline-block;
+}
+
+.div-4 {
+    border: 3px solid black;
+    height: 100px;
+}
+
+#test4 {
+    background-color: deeppink;
+    display: none; /* 요소는 존재하지만 화면에 출력되지 않으며 영역도 차지하지 않는다. */
+    opacity: 0.5; /* 요소의 가시성을 관리하는 속성. 영역 차지 */
+    visibility: hidden; /* 요소의 투명도를 0으로 만드는 속성. 영역 차지 */
+}
