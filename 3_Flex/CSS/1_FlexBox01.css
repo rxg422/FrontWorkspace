@@ -1,0 +1,85 @@
+/* flex-container에 적용되는 스타일 */
+.flex-container {
+    height: 700px;
+    background-color: #ddd;
+
+    /*
+        flex-container에 지정 가능한 속성으로 내부 item이 자동으로 공백이 사라지며
+        content 영역만큼의 크기를 가진채로 중심 축 기준 정렬이 됨.
+    */
+    display: flex;
+
+    /*
+        flex-direction
+            - flex-container 전용 속성
+            - 중심 축의 방향과 시작 위치를 지정
+            - row(행방향) : 기본 값
+    */
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+
+    /*
+        flex-wrap
+            - 내부 item을 포장
+            - item이 한 줄에 배치되게 할 것인지, 한 줄을 벗어나 여러줄로 배치되게 할 것인지 설정
+            - nowrap(한 줄 배치) : 기본 값
+    */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+
+    /*
+        flex-flow
+            - flex-container의 중심축의 방향, 순서, 여러줄 배치 여부를 한번에 설정
+            - flex-direction + flex-wrap
+    */
+    flex-flow: row-reverse wrap;
+    flex-flow: row nowrap;
+
+    /*
+        justify-content
+            - 중심축 방향으로 item의 정렬 방법을 조정
+            - flex-start(중심축의 시작지점을 기준으로 정렬) : 기본 값
+    */
+    justify-content: flex-end;
+    justify-content: center;
+    /* item 주위에 중심방향축 양쪽 방향으로 일정한 크기의 공간을 추가하여 정렬*/
+    justify-content: space-around; 
+    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-content: flex-start;
+
+    /*
+        align-items
+            - item을 교차축 방향으로 정렬하는 방법을 지정
+            - streatch(교차축 기준으로 땡겨서 정렬) : 기본 값
+    */
+    align-items: flex-start; /*교차축 시작지점을 기준으로 정렬*/
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline; /* item 내부 content 요소가 한줄에 배치되도록 설정*/
+    align-items: stretch;
+}
+
+/* 
+.item2{padding: 10px;}
+.item3{padding: 20px;}
+.item4{padding: 30px;}
+*/
+
+#container {
+    width: 450px;
+    height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center {
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+}

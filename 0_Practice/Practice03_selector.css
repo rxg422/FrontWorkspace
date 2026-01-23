@@ -64,6 +64,7 @@ div[class|=admin] {
     background-color: red;
 }
 
+/* 10번 문제 */
 ul#menu>li.active {
     color: red;
 }
