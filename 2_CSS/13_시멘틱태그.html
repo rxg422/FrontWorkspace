@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tag</title>
+
+    <link rel="stylesheet" href="13_SemanticStyle.css">
+</head>
+<body>
+    <!--
+        Semantic Tag
+            - 단순 태그 배치를 넘어 의미있는 웹을 만들 수 있게함.
+            - 기존 영역 분할 태그만으로는 목적을 확인할 수 없어 id 또는 class 추가 필요
+            - 시멘틱 태그를 활용하여 검색엔진이 페이지의 구조를 쉽게 이해, 페이지의 주요 컨텐츠를 식별하는데 도움을 줌으로 검색엔진최적화(seo)에 도움이 됨.
+
+        [Semantic Tag]
+            - header : 문서의 제목영역
+            - footer : 문서의 하단영역
+            - nav : 네비게이션 역할 링크 작성영역
+            - main : 주요 컨텐츠 작성영역
+            - section : 구역 구문 영역
+            - article(작은 토막) : 본문과 독립된 컨텐츠 작성영역
+            - aside : 사이드바 영역
+    -->
+
+    <div class="container">
+        <header>
+            <div><img src="../resources/image/kh_logo.jpg"></div>
+            <div><input type="search" placeholder="검색어를 입력해주세요." id="query"></div>
+            <div></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자유 게시판</a></li>
+                <li><a href="#">질문 게시판</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">1:1문의</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div></div>
+            <div>
+                <form class="login-form">
+                    <div class="id-pw-area">
+                        <div>
+                            <input type="text", placeholder="이이디">
+                            <input type="password" placeholder="비밀번호">
+                        </div>
+                        <div>
+                            <button>로그인</button>
+                        </div>
+                    </div>
+                    <div class="signup-find-area">
+                        <a href="#">회원가입</a>
+                        <span>|</span>
+                        <a href="#">ID/PW 찾기</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; KH Information Educational ...</p>
+        <div>
+            <a href="#">프로젝트 소개</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+        </div>
+    </footer>
+
+</body>
+</html>

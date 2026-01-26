@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 개요</title>
+</head>
+<body>
+    <h1>JavaScript 개요</h1>
+    <pre>
+        - html의 조작과 변경을 담당하는 언어
+        - html로 웹문서 구조 제작, css로 디자인 정의, js로 웹페이지상의 이벤트 발생 시 동작 구현
+        - 웹 브라우저에서 실행 가능한 인터프리터 방식(컴파일 없이 한줄 씩 실행)의 스크립트 언어
+
+        장점 
+            - 코드 작성 후 실행결과를 바로 확인할 수 있어 간단한 개발에 용이
+            - 클래스, 접근제한자, 반환형 들 고급 개념없이 바로 사용가능하여 초보자가 다루기 쉽다.
+            - 모든 웹브라우저의 표준 스크립트 언어임으로 범용성이 넓음.
+
+        단점
+            - 실행 속도가 느림.
+            - 큰규모의 어플리케이션 개발에 있어서 타입안전성이 부족
+    </pre>
+    
+    <h2>1. JS 사용 방법</h2>
+    <ol>
+        <li>
+            inline : 이벤트를 부여하고자 하는 요소 내에 소스코드를 작성하는 방법<br>
+            <input type="button" value="실행 1" onclick="console.log('Btn1 Click')">
+        </li>
+        <li>
+            internal : html문서 내에 script 태그 영역에 작성하는 방법<br>
+            <input type="button" value="실행 2" onclick="abc();">
+        </li>
+        <li>
+            external : 소스코드를 별도의 .js로 작성하여 불러오는 방법<br>
+            <input type="button" value="실행 3" onclick="test();">
+        </li>
+    </ol>
+
+    <button id="btn">콘솔창 출력</button>
+
+    <script src="../JS/1_Sample.js"></script>
+
+    <script>
+        /* JS 코드를 작성하는 영역 */
+
+        // 매개변수 없는 함수
+        function abc() {
+            console.log("Btn2 Click");
+        }
+
+        /* 내부 방식만으로 요소에 이벤트 부여 */
+        // 어떤 요소에 어떤 이벤트가 발생할지 정하고 이벤트 발생 시 동작 정의
+
+        // 요소 선택 함수
+        // document.querySelector("#btn").onclick = abc;
+        document.querySelector("#btn").onclick = function () {console.log("Print Colsole");}
+    </script>
+
+    <h2>2. Js 자료형</h2>
+    <input type="button" value="자료형 출력" onclick="dataType();">
+
+    <script>
+        function dataType() {
+            /* JS 변수 선언(var(es5), let, const) */
+            // undefined : 값이 초기화되지 않았을 때 기본값
+            var i;
+            console.log(i, typeof(i));
+
+            // js에서 수는 number 자료형으로 통일
+            i = 100;
+            console.log(i, typeof(i));
+            i = 3.14;
+            console.log(i, typeof(i));
+
+            // 문자열 자료형만 존재
+            i = 'k';
+            console.log(i, typeof(i));
+            i = "JS is Fun";
+            console.log(i, typeof(i));
+
+            i = true;
+            console.log(i, typeof(i));
+
+            // 배열도 객체처럼 사용, List<Object>와 비슷함.
+            i = [1, 2, 3, "Hi"];
+            console.log(i, typeof(i), Array.isArray(i));
+
+            // Map 형태 객체, HashMap<String, Object>과 비슷
+            i = {name:"홍길동", age:30, hobby:["축구", "농구"]};
+            console.log(i, typeof{i}, Array.isArray(i));
+
+            // 함수형 : js는 함수를 값으로 취급, 자료형으로 사용 가능
+            i = function (x, y) {return x + y;};
+            console.log(i, typeof(i));
+        }
+    </script>
+
+</body>
+</html>
