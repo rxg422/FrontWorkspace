@@ -101,17 +101,22 @@
             체크 박스 선택 후 카테고리 선택을 누르면 하단 네모에 선택한 카테고리 출력.
         */
         function printCategory(){
-            var area = document.querySelector("#area");
-            var hobbies = document.querySelectorAll("input[name=category]");
+            // var area = document.querySelector("#area");
+            var categorys = document.querySelectorAll("input[name=category]:checked");
 
-            area.textContent = "";
+            area.innerHTML = "";
 
-            hobbies.forEach(hobby => {
-                if(hobby.checked) {
-                    area.innerHTML += hobby.value + "<br>";
-                    hobby.checked = false;
-                }
-            });
+            for(let i=0; i<categorys.length; i++) {
+                area.innerHTML += categorys[i].value + "<br>";
+            }
+
+            // categorys.forEach(category => {
+            //     area.innerHTML += category.value + "<br>";
+            //     // if(category.checked) {
+            //     //     area.innerHTML += category.value + "<br>";
+            //     //     category.checked = false;
+            //     // }
+            // });
 
             document.querySelector("#selectAll").checked = false;
         }
@@ -120,10 +125,11 @@
          전체선택 체크박스 선택시 모든 카테고리가 선택되며, 선택 해제서 모든 체크박스가 선택 해제. 
         */
         function selectAll(){
-            var chAll = document.querySelector("#selectAll").checked;
-            var hobbies = document.querySelectorAll("input[name=category]");
-            hobbies.forEach(hobby => {
-                hobby.checked = chAll;
+            var checked = document.querySelector("#selectAll").checked;
+            var categorys = document.querySelectorAll("input[name=category]");
+
+            categorys.forEach(category => {
+                category.checked = checked;
             });
         }
 
@@ -132,16 +138,28 @@
            하나라도 선택이 되어있지 않으면 전체선택 체크박스는 선택 해제
         */
         function checkCategory(checkbox){
-            var chAll = document.querySelector("#selectAll");
-            var hobbies = document.querySelectorAll("input[name=category]");
+            var selectAll = document.querySelector("#selectAll");
+            var checkboxes = document.querySelectorAll("input[name=category]");
+            var checkedboxes = document.querySelectorAll("input[name=category]:checked")
 
-            chAll.checked = true;
+            if(checkboxes.length == 12) {
+                selectAll.checked = true;
+            }
+            else {
+                selectAll.checked = false;
+            }
 
-            hobbies.forEach(hobby => {
-                if(!hobby.checked) {
-                    chAll.checked = false;
-                }
-            });
+
+            // var chAll = document.querySelector("#selectAll");
+            // var hobbies = document.querySelectorAll("input[name=category]");
+
+            // chAll.checked = true;
+
+            // hobbies.forEach(hobby => {
+            //     if(!hobby.checked) {
+            //         chAll.checked = false;
+            //     }
+            // });
         }
     </script>
 </body>

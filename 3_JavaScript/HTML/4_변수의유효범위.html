@@ -59,5 +59,23 @@
     <script>
         // console.log(a1);
     </script>
+
+    <h1>Hoisting</h1>
+    <script>
+        // var 키워드는 변수는 hoisting된다.
+        console.log(b);
+        var b = "hello";
+
+        // 함수 또한 hoisting
+        function foo() {
+            console.log("foo");
+        }
+
+        // 함수 표현식으로 생성한 함수는 hoisting되지 않음.
+        var bar = function() {
+            console.log("bar");
+        };
+        bar();
+    </script>
 </body>
 </html>
