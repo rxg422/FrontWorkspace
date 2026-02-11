@@ -1,0 +1,108 @@
+/* 공용 스타일 작성 시작*/
+body {
+    background-color: lightgray;
+}
+/* 공용 스타일 작성 끝*/
+
+
+/* Header 스타일 작성 시작*/
+#container1>div {
+    height: 80px;
+    background-color: rgb(48, 48, 231);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    margin: 3px;
+}
+
+div>input:nth-child(2) {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+/* Header 스타일 작성 끝*/
+
+
+/* 상품 스타일 작성 시작*/
+#container2 {
+    display: flex;
+    height: 600px;
+}
+
+#container2>:nth-child(1) {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+
+#container2>:nth-child(2) {
+    flex-basis: 20%;
+    background-color: white;
+    margin: 10px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items>div {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items>p {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.items>div>img {
+    width: 90px;
+}
+
+.items>div>input {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+.items>div>div>p {
+    font-size: 10px;
+    margin: 0;
+}
+/* 상품 스타일 작성 끝*/
+
+
+/* 장바구니 스타일 작성 시작*/
+#container2>:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* 장바구니 스타일 작성 끝*/
+
+
+/* 푸터 스타일 작성 시작*/
+#footer {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* 푸터 스타일 작성 끝*/
